@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>648</width>
+    <height>418</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>UpArrowCursor</cursorShape>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>변압기설계 프로그램(kepri)</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>-4</number>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit">
+        <property name="focusPolicy">
+         <enum>Qt::WheelFocus</enum>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::ActionsContextMenu</enum>
+        </property>
+        <property name="toolTipDuration">
+         <number>-2</number>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>648</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string>파일</string>
+    </property>
+    <addaction name="file_newdesign"/>
+    <addaction name="action_load"/>
+    <addaction name="action_save"/>
+    <addaction name="file_save_as"/>
+    <addaction name="file_quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_input">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="title">
+     <string>입력</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_design">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string>설계</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_view">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string>보기</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_material">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string>재료</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_calculate">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string>계산</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_modelling">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string>모델링</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_print">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string>출력</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_security">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string>보안</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_standard">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string>기준</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_tool">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string>도구</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string>도움말</string>
+    </property>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_input"/>
+   <addaction name="menu_design"/>
+   <addaction name="menu_view"/>
+   <addaction name="menu_material"/>
+   <addaction name="menu_calculate"/>
+   <addaction name="menu_modelling"/>
+   <addaction name="menu_print"/>
+   <addaction name="menu_security"/>
+   <addaction name="menu_standard"/>
+   <addaction name="menu_tool"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="file_newdesign">
+   <property name="text">
+    <string>신규설계</string>
+   </property>
+  </action>
+  <action name="action_load">
+   <property name="iconText">
+    <string>불러오기</string>
+   </property>
+   <property name="toolTip">
+    <string>불러오기</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>저장하기</string>
+   </property>
+   <property name="iconText">
+    <string>저장하기</string>
+   </property>
+   <property name="toolTip">
+    <string>저장하기</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+  </action>
+  <action name="file_save_as">
+   <property name="text">
+    <string>다른이름으로 저장하기</string>
+   </property>
+  </action>
+  <action name="file_quit">
+   <property name="text">
+    <string>종료하기</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

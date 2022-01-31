@@ -17,6 +17,7 @@ class Windowclass(QMainWindow,form_class):
         
         self.opened = False
         self.opened_file_path = "제목 없음"
+        print("연습")
         
     def save_changed_data(self):
         msgBox = QMessageBox()
